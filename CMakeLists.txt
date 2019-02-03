@@ -12,7 +12,7 @@ project(DirectXTex)
 						${CMAKE_CURRENT_SOURCE_DIR}/Src
 	)
 
-	add_compile_definitions( _UNICODE UNICODE _DEBUG _LIB _WIN32_WINNT=0x0A00 _CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS)
+	add_compile_definitions( _UNICODE UNICODE _LIB _WIN32_WINNT=0x0A00 _CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS)
 
 	#making sure to add the common cpp flags, that are defined in the main cpp file
     set(COMMON_CXX_FLAGS "${COMMON_CXX_FLAGS}  /std:c++17 /W4 /arch:AVX2 /fp:fast /MP")
